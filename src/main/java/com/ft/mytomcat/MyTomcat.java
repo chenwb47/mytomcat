@@ -62,7 +62,6 @@ public class MyTomcat {
     }
 
     private int port;
-    private Map<String, String> urlServletMap = new HashMap<>();
     private ServletMappingConfig servletConfig;
 
     public static void main(String[] args) {

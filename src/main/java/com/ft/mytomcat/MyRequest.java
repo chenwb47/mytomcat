@@ -2,7 +2,9 @@ package com.ft.mytomcat;
 
 import java.io.IOException;
 import java.io.InputStream;
+import lombok.Getter;
 
+@Getter
 public class MyRequest {
     private String url;
     private MyHttpRequestType method;
@@ -34,13 +36,5 @@ public class MyRequest {
                 "url='" + url + '\'' +
                 ", method=" + method +
                 '}';
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public MyHttpRequestType getMethod() {
-        return method;
     }
 }

@@ -2,12 +2,10 @@ package com.ft.mytomcat;
 
 import java.io.IOException;
 import java.io.OutputStream;
+import lombok.AllArgsConstructor;
 
+@AllArgsConstructor
 public class MyResponse {
-
-    public MyResponse(OutputStream osm) {
-        this.osm = osm;
-    }
 
     public void write(String content) throws IOException {
         StringBuilder sbd = new StringBuilder(128);
